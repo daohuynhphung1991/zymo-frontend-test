@@ -26,6 +26,7 @@ const Map = forwardRef<HTMLDivElement, MapProps>(
           zoom={zoom}
           scrollWheelZoom={false}
           className={classes.mapWrapper}
+          ref={ref}
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -51,6 +52,7 @@ const Map = forwardRef<HTMLDivElement, MapProps>(
               </Marker>
             ) : (
               makersPosition.map((maker) => {
+                console.log("maker", maker);
                 return (
                   <Marker position={maker}>
                     <Popup>

@@ -10,7 +10,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ children, className, ...props }, ref) => {
     const classes = useStyles(props);
     return (
-      <CardMui {...props} className={classes.cardWrapper}>
+      <CardMui {...props} className={classes.cardWrapper} ref={ref}>
         <CardContent>{children}</CardContent>
       </CardMui>
     );

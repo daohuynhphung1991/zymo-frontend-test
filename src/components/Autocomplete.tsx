@@ -9,15 +9,18 @@ import { makeStyles } from "@mui/styles";
  */
 
 const Autocomplete = forwardRef<HTMLDivElement, SelectProps>(
-  ({
-    label = "",
-    id,
-    children,
-    listOptions,
-    onChangeValue,
-    className,
-    ...props
-  }) => {
+  (
+    {
+      label = "",
+      id,
+      children,
+      listOptions,
+      onChangeValue,
+      className,
+      ...props
+    },
+    ref
+  ) => {
     const handleChange = (
       event: SelectChangeEvent,
       newValue: { label: string; value: string | object }
@@ -28,6 +31,7 @@ const Autocomplete = forwardRef<HTMLDivElement, SelectProps>(
     const classes = useStyles(props);
     return (
       <AutocompleteMui
+        ref={ref}
         id={id}
         options={listOptions}
         renderInput={(params) => <TextField {...params} label={label} />}

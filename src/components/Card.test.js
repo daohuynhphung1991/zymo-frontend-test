@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import App from "./App";
+import Card from "./Card";
 
-test("renders correctly", () => {
-  const component = renderer.create(<App />);
+test("Card Component", () => {
+  const component = renderer.create(<Card>This is Card Component</Card>);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

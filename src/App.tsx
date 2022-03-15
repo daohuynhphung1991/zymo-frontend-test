@@ -22,7 +22,7 @@ function App() {
       const countryInfo: countryInfoType = item.All;
       return countryInfo.abbreviation && countryInfo.country;
     })
-    .map((item, index) => {
+    .map((item) => {
       return item;
     });
 
