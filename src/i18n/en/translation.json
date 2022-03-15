@@ -1,0 +1,19 @@
+{
+  "deaths": "Deaths",
+  "country": "Country",
+  "population": "Population",
+  "sq_km_area": "Sq Km Area",
+  "life_expectancy": "Life Expectancy",
+  "elevation_in_meters": "Elevation In Meters",
+  "continent": "Continent",
+  "abbreviation": "Abbreviation",
+  "location": "Location",
+  "iso": "Iso",
+  "capital_city": "Capital City",
+  "long": "Long",
+  "lat": "Lat",
+  "confirmed": "Confirmed Covid Cases",
+  "recovered": "Recovered",
+  "deaths ": "Patient Deaths",
+  "updated ": "Information Updated"
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import "./i18n/config";
+
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "stylesheet";
 

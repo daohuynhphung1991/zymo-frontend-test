@@ -65,6 +65,7 @@ const Map = forwardRef<HTMLDivElement, MapProps>(
           )}
         </MapContainer>
       ),
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       [position, makersPosition]
     );
   }

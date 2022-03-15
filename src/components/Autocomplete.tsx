@@ -31,6 +31,7 @@ const Autocomplete = forwardRef<HTMLDivElement, SelectProps>(
         id={id}
         options={listOptions}
         renderInput={(params) => <TextField {...params} label={label} />}
+        // @ts-ignore: Unreachable code error
         onChange={handleChange}
         className={classes.autocomplete}
       />
@@ -50,6 +51,7 @@ export interface SelectProps extends HTMLAttributes<HTMLDivElement> {
   id: string;
   children?: ReactNode;
   listOptions: any[];
+  // @ts-ignore: Unreachable code error
   onChangeValue?(
     event: React.SyntheticEvent | SelectChangeEvent,
     newValue: { label: string; value: string | object }
